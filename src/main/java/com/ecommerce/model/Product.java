@@ -7,6 +7,9 @@ public class Product {
     private String imageUrl;
     private double price;
 
+    public Product() {
+    	
+    }
     // Constructors, getters và setters
     public Product(int id, String name, String description, String imageUrl, double price) {
         this.id = id;
@@ -28,5 +31,21 @@ public class Product {
     }
     public double getPrice() {
     	return this.price;
+    }
+    
+    public void setName(String name) {
+    	this.name = name;
+    }
+    public void setDescription(String description) {
+    	this.description = description;
+    }
+    public void setImageUrl(String imageUrl) {
+    	this.imageUrl = imageUrl;
+    }
+    public void setPrice(double price) {
+    	this.price = price;
+    }
+    public void setId(int id) {
+    	this.id = id;
     }
 }
