@@ -4,6 +4,7 @@ public class Customer {
     private int id;
     private String username;
     private String password;
+    private String email;
 
     // Constructors
     public Customer() {}
@@ -33,8 +34,13 @@ public class Customer {
     public String getPassword() {
         return password;
     }
-
+    public String getEmail() {
+        return this.email;
+    }
     public void setPassword(String password) {
         this.password = password;
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

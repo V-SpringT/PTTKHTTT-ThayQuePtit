@@ -1,4 +1,11 @@
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\dao\ProductDAO.java
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\model\ResetPasswordToken.java
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\utils\EmailUtil.java
 C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\model\Customer.java
 C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\controller\client\LoginController.java
 C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\dao\CustomerDAO.java
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\controller\client\SearchController.java
 C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\controller\client\HomeController.java
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\controller\client\ForgotPasswordController.java
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\dao\ResetPasswordDAO.java
+C:\Users\SpringT\eclipse-workspace\QueProject\src\main\java\com\ecommerce\model\Product.java

@@ -1,4 +1,12 @@
 com\ecommerce\controller\client\LoginController.class
+com\ecommerce\dao\ProductDAO.class
+com\ecommerce\utils\EmailUtil.class
+com\ecommerce\model\Product.class
+com\ecommerce\controller\client\ForgotPasswordController.class
+com\ecommerce\dao\ResetPasswordDAO.class
+com\ecommerce\model\ResetPasswordToken.class
+com\ecommerce\utils\EmailUtil$1.class
 com\ecommerce\controller\client\HomeController.class
 com\ecommerce\dao\CustomerDAO.class
 com\ecommerce\model\Customer.class
+com\ecommerce\controller\client\SearchController.class

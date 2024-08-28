@@ -14,8 +14,11 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="https://png.pngtree.com/template/20210513/ourmid/pngtree-e-commerce-business-logo-image_523441.png" alt="eCommerce Logo">
-            </div>
+			    <a href="/QueProject/home"> 
+			        <img src="https://png.pngtree.com/template/20210513/ourmid/pngtree-e-commerce-business-logo-image_523441.png" alt="eCommerce Logo">
+			    </a>
+			</div>
+
             <div class="search-bar">
                 <form action="search" method="get">
                     <input type="text" name="query" placeholder="Search for products...">

@@ -10,7 +10,6 @@ public class Product {
     public Product() {
     	
     }
-    // Constructors, getters và setters
     public Product(int id, String name, String description, String imageUrl, double price) {
         this.id = id;
         this.name = name;
@@ -19,7 +18,6 @@ public class Product {
         this.price = price;
     }
 
-    // Getters và Setters
     public String getName() {
     	return this.name;
     }
