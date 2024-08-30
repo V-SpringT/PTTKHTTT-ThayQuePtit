@@ -32,8 +32,8 @@ public class EmailUtil {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(username)); 
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
-            message.setSubject("Đặt lại mật khẩu");
-            message.setText("Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết dưới đây:\n" + resetLink);
+            message.setSubject("Reset Password");
+            message.setText("Click link below to reset password" + resetLink);
 
             Transport.send(message);
             System.out.println("Email đặt lại mật khẩu đã được gửi thành công!");
