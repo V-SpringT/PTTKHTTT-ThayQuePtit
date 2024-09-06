@@ -4,6 +4,15 @@
 <head>
     <title>Reset Password</title>
     <style>
+	    input[type="password"]::-ms-reveal,
+		input[type="password"]::-ms-clear {
+		    display: none;
+		}
+		
+		input[type="password"]::-webkit-textfield-decoration-container {
+		    display: none;
+		}
+    
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -12,6 +21,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+       
         }
 
         .reset-container {
@@ -42,6 +52,13 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+        input[type="text"] {
+            width: calc(100% - 30px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
         input[type="submit"] {
             width: 100%;
@@ -59,10 +76,12 @@
         }
 
         .toggle-password {
-            float: right;
-            margin-top: -30px;
-            margin-right: 10px;
-            cursor: pointer;
+       		display: none; 
+            position: absolute;
+		    right: 10px; 
+		    top: 35%; 
+		    transform: translateY(-40%);
+		    cursor: pointer;
         }
 
         p {
@@ -74,6 +93,7 @@
             color: red;
             margin-top: 10px;
         }
+        
     </style>
 </head>
 <body>
@@ -83,12 +103,12 @@
             <input type="hidden" name="token" value="${token}">
             <label for="newPassword">New Password:</label>
             <div style="position: relative;">
-                <input type="password" id="newPassword" name="newPassword" required>
+                <input type="password" id="newPassword" name="newPassword" required oninput="toggleVisibility('newPassword')">
                 <span class="toggle-password" onclick="togglePassword('newPassword')">👁</span>
             </div>
             <label for="confirmPassword">Confirm Password:</label>
             <div style="position: relative;">
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" required oninput="toggleVisibility('confirmPassword')">
                 <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁</span>
             </div>
             <input type="submit" value="Reset Password">
@@ -103,17 +123,29 @@
     </div>
 
     <script>
-        function togglePassword(fieldId) {
-            var passwordField = document.getElementById(fieldId);
-            var passwordToggle = passwordField.nextElementSibling;
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-                passwordToggle.textContent = "🙈";
-            } else {
-                passwordField.type = "password";
-                passwordToggle.textContent = "👁";
-            }
-        }
+	    function toggleVisibility(fieldId) {
+	        var passwordField = document.getElementById(fieldId);
+	        var passwordToggle = passwordField.nextElementSibling;
+	
+	        if (passwordField.value.length > 0) {
+	            passwordToggle.style.display = "block"; // Hiển thị biểu tượng
+	        } else {
+	            passwordToggle.style.display = "none";  // Ẩn biểu tượng khi không có dữ liệu
+	        }
+	    }
+	    function togglePassword(fieldId) {
+	        var passwordField = document.getElementById(fieldId);
+	        var passwordToggle = passwordField.nextElementSibling;
+	
+	        if (passwordField.type === "password") {
+	            passwordField.type = "text";
+	            passwordToggle.textContent = "🙈";
+	        } else {
+	            passwordField.type = "password";
+	            passwordToggle.textContent = "👁";
+	        }
+	    }
+
 
         function validatePasswords() {
             var newPassword = document.getElementById("newPassword").value;

@@ -38,9 +38,12 @@ public class ForgotPasswordController extends HttpServlet {
             resetPasswordDAO.saveToken(resetToken);
             String resetLink = request.getRequestURL().toString().replace("forgot-password", "reset-password?token=" + token);
             EmailUtil.sendResetPasswordEmail(email, resetLink);
+            request.setAttribute("message", "Chúng tôi đã gửi hướng dẫn đổi mật khẩu đến email của bạn");
         }
-
-        request.setAttribute("message", "If your email is registered, you'll receive a reset link.");
+        else {
+        	request.setAttribute("message", "Email không tồn tại trong hệ thống");
+        }
+        
         request.getRequestDispatcher("/views/client/forgot-password.jsp").forward(request, response);
     }
 }

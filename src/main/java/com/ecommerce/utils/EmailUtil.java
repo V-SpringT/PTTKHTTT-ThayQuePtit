@@ -33,10 +33,9 @@ public class EmailUtil {
             message.setFrom(new InternetAddress(username)); 
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
             message.setSubject("Reset Password");
-            message.setText("Click link below to reset password" + resetLink);
+            message.setText("Click link below to reset password: "+"\n" + resetLink);
 
             Transport.send(message);
-            System.out.println("Email đặt lại mật khẩu đã được gửi thành công!");
 
         } catch (MessagingException e) {
             e.printStackTrace();

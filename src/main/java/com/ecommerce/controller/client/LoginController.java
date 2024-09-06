@@ -35,8 +35,7 @@ public class LoginController extends HttpServlet {
       
             response.sendRedirect("/QueProject/home");
         } else {
-            // Return an error message and reload the login page
-            request.setAttribute("errorMessage", "Invalid username or password");
+            request.setAttribute("errorMessage", "Mật khẩu hoặc tên đăng nhập không đúng");
             request.getRequestDispatcher("/views/client/login.jsp").forward(request, response);
         }
     }

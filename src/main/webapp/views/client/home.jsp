@@ -12,21 +12,28 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="header-container">
-            <div class="logo">
-			    <a href="/QueProject/home"> 
-			        <img src="https://png.pngtree.com/template/20210513/ourmid/pngtree-e-commerce-business-logo-image_523441.png" alt="eCommerce Logo">
-			    </a>
-			</div>
-
-            <div class="search-bar">
-                <form action="search" method="get">
-                    <input type="text" name="query" placeholder="Search for products...">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
+    <div class="header-container">
+        <div class="logo">
+            <a href="/QueProject/home"> 
+                <img src="https://png.pngtree.com/template/20210513/ourmid/pngtree-e-commerce-business-logo-image_523441.png" alt="eCommerce Logo">
+            </a>
         </div>
-    </header>
+
+        <div class="search-bar">
+            <form action="search" method="get">
+                <input type="text" name="query" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+        <div class="logout">
+            <form action="/QueProject/login" method="get">
+                <button type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+</header>
+
 
     <!-- Body -->
     <div class="body-container">

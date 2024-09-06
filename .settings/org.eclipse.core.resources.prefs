@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/java/com/ecommerce/controller/client/ForgotPasswordController.java=UTF-8
+encoding//src/main/java/com/ecommerce/controller/client/LoginController.java=UTF-8
 encoding//src/main/java/com/ecommerce/dao/CustomerDAO.java=UTF-8
 encoding//src/main/java/com/ecommerce/model/Product.java=UTF-8
 encoding//src/main/java/com/ecommerce/utils/EmailUtil.java=UTF-8

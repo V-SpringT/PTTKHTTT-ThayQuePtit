@@ -31,6 +31,14 @@ body {
     cursor: pointer;
 }
 
+.logout button {
+	padding: 5px 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 .body-container {
     padding: 20px;
 }
@@ -76,3 +84,4 @@ body {
     padding: 20px;
     text-align: center;
 }
+
